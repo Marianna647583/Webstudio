@@ -209,6 +209,38 @@
   gap: 30px;
 }
 
+.box {
+  position: relative;
+}
+
+
+
+.position {
+  color: var(--white);
+  font-family: "Roboto", serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  letter-spacing: 0.03em;
+  position: absolute;
+  top: 224px;
+  background-color: #2f303acc;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.text1 {
+  padding: 27px 107px;
+}
+
+.text2 {
+  padding: 27px 113px;
+}
+
+.text3 {
+  padding: 27px 94px;
+}
+
 .webstudio__section4 {
   background-color: var(--alsoback);
   padding: 94px 0;
@@ -327,8 +359,8 @@
 .footer {
   background-color: var(--footer);
   padding: 60px 0 60px 15px;
- display: flex;
- gap: 70px;
+  display: flex;
+  gap: 70px;
 }
 
 .footer__address {
@@ -374,7 +406,7 @@
 }
 
 .footer__icons {
-  padding: 20px 0 0 0 ;
+  padding: 20px 0 0 0;
 }
 
 .footer__icon {

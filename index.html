@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
   </head>
   <body>
     <header class="header container">
-      <img src="images/WebStudio.svg" />
+      <img alt="logo" src="images/WebStudio.svg" />
 
       <nav class="header__nav">
         <ul class="header__nav__list">
           <li class="header__nav__item">
-            <img src="">
             <a class="header__nav__item__link1">Студія</a>
           </li>
           <li class="header__nav__item">
@@ -28,13 +31,17 @@
 
       <div class="header__div2">
         <div class="icon-post__div">
-        <svg class="icon-post"><use href="./images/symbol-defs.svg#icon-post"></use></svg>
-       <a class="header__div2__link1">info@devstudio.com</a>
-       </div>
-       <div class="icon-smartphone__div">
-        <svg class="icon-smartphone"><use href="./images/symbol-defs.svg#icon-smartphone"></use></svg>
-       <a class="header__div2__link2">+38 096 111 11 11</a>
-      </div>
+          <svg class="icon-post">
+            <use href="./images/symbol-defs.svg#icon-post"></use>
+          </svg>
+          <a class="header__div2__link1">info@devstudio.com</a>
+        </div>
+        <div class="icon-smartphone__div">
+          <svg class="icon-smartphone">
+            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+          </svg>
+          <a class="header__div2__link2">+38 096 111 11 11</a>
+        </div>
       </div>
     </header>
 
@@ -48,7 +55,7 @@
 
       <section class="webstudio__section2">
         <div class="webstudio__section2__div1">
-          <img src="images/about1.png" />
+          <img alt="img" src="images/about1.png" />
           <p class="webstudio__section2__text1">УВАГА ДО ДЕТАЛЕЙ</p>
           <p class="webstudio__section2__text2">
             Ідейні міркування, і навіть початок повсякденної роботи з формування
@@ -57,7 +64,7 @@
         </div>
 
         <div class="webstudio__section2__div2">
-          <img src="images/about2.png" />
+          <img  alt="img" src="images/about2.png" />
           <p class="webstudio__section2__text1">ПУНКТУАЛЬНІСТЬ</p>
           <p class="webstudio__section2__text2">
             Завдання організації, особливо рамки і місце навчання кадрів тягне у
@@ -66,7 +73,7 @@
         </div>
 
         <div class="webstudio__section2__div3">
-          <img src="images/about3.png" />
+          <img  alt="img" src="images/about3.png" />
           <p class="webstudio__section2__text1">ПЛАНУВАННЯ</p>
           <p class="webstudio__section2__text2">
             Так само консультація з широким активом значною мірою зумовлює.
@@ -74,7 +81,7 @@
         </div>
 
         <div class="webstudio__section2__div4">
-          <img src="images/about4.png" />
+          <img  alt="img" src="images/about4.png" />
           <p class="webstudio__section2__text1">СУЧАСНІ ТЕХНОЛОГІЇ</p>
           <p class="webstudio__section2__text2">
             Значимість цих проблем настільки очевидна, що реалізація планових
@@ -86,9 +93,18 @@
       <section class="webstudio__section3">
         <h1 class="webstudio__section3__h1">Чим ми займаємося</h1>
         <div class="webstudio__section3__div">
-          <img src="images/img1.jpg" />
-          <img src="images/img2.jpg" />
-          <img src="images/img3.jpg" />
+          <div class="box">
+            <img  alt="img" class="imggav" src="images/img1.jpg" />
+            <p class="position text1">ДЕКСТОПНІ ДОДАТКИ</p>
+          </div>
+          <div class="box">
+            <img  alt="img" class="imggav" src="images/img2.jpg" />
+            <p class="position text2">МОБІЛЬНІ ДОДАТКИ</p>
+          </div>
+          <div class="box">
+            <img  alt="img" class="imggav" src="images/img3.jpg" />
+            <p class="position text3">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+          </div>
         </div>
       </section>
 
@@ -96,79 +112,111 @@
         <h1 class="webstudio__section4__h1">Наша команда</h1>
         <div class="webstudio__section4__div">
           <div class="webstudio__section4__div1">
-            <img class="img" src="images/img4.jpg" />
+            <img  alt="img" class="img" src="images/img4.jpg" />
             <p class="webstudio__section4__text1">Ігор Дем'яненко</p>
             <p class="webstudio__section4__text2">Product Designer</p>
-          <div class="icons">
-            <div class="back">
-           <svg class="icon"><use href="./images/symbol-defs.svg#icon-instagram"></use></svg>
-           </div>
-           <div class="back">
-           <svg class="icon"><use href="./images/symbol-defs.svg#icon-twitter"></use></svg>
+            <div class="icons">
+              <div class="back">
+                <svg class="icon">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </div>
+              <div class="back">
+                <svg class="icon">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </div>
+              <div class="back">
+                <svg class="icon">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </div>
+              <div class="back">
+                <svg class="icon">
+                  <use href="./images/symbol-defs.svg#icon-in"></use>
+                </svg>
+              </div>
+            </div>
           </div>
-           <div class="back">
-           <svg class="icon"><use href="./images/symbol-defs.svg#icon-facebook"></use></svg>
-          </div>
-          <div class="back">
-           <svg class="icon"><use href="./images/symbol-defs.svg#icon-in"></use></svg>
-          </div>
-        </div>
-      </div>
           <div class="webstudio__section4__div1">
-            <img class="img" src="images/img5.jpg" />
+            <img  alt="img" class="img" src="images/img5.jpg" />
             <p class="webstudio__section4__text1">Ольга Рєпіна</p>
             <p class="webstudio__section4__text2">Frontend Developer</p>
             <div class="icons">
               <div class="back">
-             <svg class="icon"><use href="./images/symbol-defs.svg#icon-instagram"></use></svg>
-             </div>
-             <div class="back">
-             <svg class="icon"><use href="./images/symbol-defs.svg#icon-twitter"></use></svg>
-            </div>
-             <div class="back">
-             <svg class="icon"><use href="./images/symbol-defs.svg#icon-facebook"></use></svg>
-            </div>
-            <div class="back">
-             <svg class="icon"><use href="./images/symbol-defs.svg#icon-in"></use></svg>
-            </div>
+                <svg class="icon">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </div>
+              <div class="back">
+                <svg class="icon">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </div>
+              <div class="back">
+                <svg class="icon">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </div>
+              <div class="back">
+                <svg class="icon">
+                  <use href="./images/symbol-defs.svg#icon-in"></use>
+                </svg>
+              </div>
             </div>
           </div>
           <div class="webstudio__section4__div1">
-            <img class="img" src="images/img6.jpg" />
+            <img  alt="img" class="img" src="images/img6.jpg" />
             <p class="webstudio__section4__text1">Микола Тарасов</p>
             <p class="webstudio__section4__text2">Marketing</p>
             <div class="icons">
               <div class="back">
-             <svg class="icon"><use href="./images/symbol-defs.svg#icon-instagram"></use></svg>
-             </div>
-             <div class="back">
-             <svg class="icon"><use href="./images/symbol-defs.svg#icon-twitter"></use></svg>
-            </div>
-             <div class="back">
-             <svg class="icon"><use href="./images/symbol-defs.svg#icon-facebook"></use></svg>
-            </div>
-            <div class="back">
-             <svg class="icon"><use href="./images/symbol-defs.svg#icon-in"></use></svg>
-            </div>
+                <svg class="icon">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </div>
+              <div class="back">
+                <svg class="icon">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </div>
+              <div class="back">
+                <svg class="icon">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </div>
+              <div class="back">
+                <svg class="icon">
+                  <use href="./images/symbol-defs.svg#icon-in"></use>
+                </svg>
+              </div>
             </div>
           </div>
           <div class="webstudio__section4__div1">
-            <img class="img" src="images/img7.jpg" />
+            <img  alt="img" class="img" src="images/img7.jpg" />
             <p class="webstudio__section4__text1">Михайло Єрмаков</p>
             <p class="webstudio__section4__text2">UI Designer</p>
             <div class="icons">
               <div class="back">
-             <svg class="icon"><use href="./images/symbol-defs.svg#icon-instagram"></use></svg>
-             </div>
-             <div class="back">
-             <svg class="icon"><use href="./images/symbol-defs.svg#icon-twitter"></use></svg>
-            </div>
-             <div class="back">
-             <svg class="icon"><use href="./images/symbol-defs.svg#icon-facebook"></use></svg>
-            </div>
-            <div class="back">
-             <svg class="icon"><use href="./images/symbol-defs.svg#icon-in"></use></svg>
-            </div>
+                <svg class="icon">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </div>
+              <div class="back">
+                <svg class="icon">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </div>
+              <div class="back">
+                <svg class="icon">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </div>
+              <div class="back">
+                <svg class="icon">
+                  <use href="./images/symbol-defs.svg#icon-in"></use>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -176,61 +224,83 @@
 
       <section class="webstudio__section5">
         <h1 class="webstudio__section5__h1">Постійні Клієнти</h1>
-      <div class="icons__div">
-        <div class="icons__border">
-          <svg class="icon-company"><use href="./images/symbol-defs.svg#icon-company_svg1"></use></svg>
+        <div class="icons__div">
+          <div class="icons__border">
+            <svg class="icon-company">
+              <use href="./images/symbol-defs.svg#icon-company_svg1"></use>
+            </svg>
+          </div>
+          <div class="icons__border">
+            <svg class="icon-company">
+              <use href="./images/symbol-defs.svg#icon-company_svg2"></use>
+            </svg>
+          </div>
+          <div class="icons__border">
+            <svg class="icon-company">
+              <use href="./images/symbol-defs.svg#icon-company_svg3"></use>
+            </svg>
+          </div>
+          <div class="icons__border">
+            <svg class="icon-company">
+              <use href="./images/symbol-defs.svg#icon-company_svg4"></use>
+            </svg>
+          </div>
+          <div class="icons__border">
+            <svg class="icon-company">
+              <use href="./images/symbol-defs.svg#icon-company_svg5"></use>
+            </svg>
+          </div>
+          <div class="icons__border">
+            <svg class="icon-company">
+              <use href="./images/symbol-defs.svg#icon-company_svg6"></use>
+            </svg>
+          </div>
         </div>
-        <div class="icons__border">
-          <svg class="icon-company"><use href="./images/symbol-defs.svg#icon-company_svg2"></use></svg>
-        </div>
-        <div class="icons__border">
-          <svg class="icon-company"><use href="./images/symbol-defs.svg#icon-company_svg3"></use></svg>
-        </div>
-        <div class="icons__border">
-          <svg class="icon-company"><use href="./images/symbol-defs.svg#icon-company_svg4"></use></svg>
-        </div>
-        <div class="icons__border">
-          <svg class="icon-company"><use href="./images/symbol-defs.svg#icon-company_svg5"></use></svg>
-        </div>
-        <div class="icons__border">
-          <svg class="icon-company"><use href="./images/symbol-defs.svg#icon-company_svg6"></use></svg>
-        </div>
-      </div>
       </section>
     </main>
 
     <footer class="footer">
-
       <div class="footer1">
-        <img src="images/WebStudio2.svg" />
-          <address class="footer__address"> м. Київ, пр-т Лесі Українки, 26 </address>
-         <div>
-          <a class="footer__link1" href="mailto:info@devstudio.com" >info@devstudio.com</a >
-          </div>
-          <div>
-            <a class="footer__link2" href="+380961111111">+38 096 111 11 11</a>
+        <img  alt="logo" src="images/WebStudio2.svg" />
+        <address class="footer__address">
+          м. Київ, пр-т Лесі Українки, 26
+        </address>
+        <div>
+          <a class="footer__link1" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </div>
+        <div>
+          <a class="footer__link2" href="+380961111111">+38 096 111 11 11</a>
         </div>
       </div>
 
-        <div class="footer2">
-           <p class="footer2__text">ПРИЄДНУЙТЕСЬ</p>
-            
-           <div class="footer__icons">
-            <div class="footer__back">
-           <svg class="footer__icon"><use href="./images/symbol-defs.svg#icon-instagram"></use></svg>
-           </div>
-           <div class="footer__back">
-           <svg class="footer__icon"><use href="./images/symbol-defs.svg#icon-twitter"></use></svg>
-          </div>
-           <div class="footer__back">
-           <svg class="footer__icon"><use href="./images/symbol-defs.svg#icon-facebook"></use></svg>
+      <div class="footer2">
+        <p class="footer2__text">ПРИЄДНУЙТЕСЬ</p>
+
+        <div class="footer__icons">
+          <div class="footer__back">
+            <svg class="footer__icon">
+              <use href="./images/symbol-defs.svg#icon-instagram"></use>
+            </svg>
           </div>
           <div class="footer__back">
-           <svg class="footer__icon"><use href="./images/symbol-defs.svg#icon-in"></use></svg>
+            <svg class="footer__icon">
+              <use href="./images/symbol-defs.svg#icon-twitter"></use>
+            </svg>
           </div>
+          <div class="footer__back">
+            <svg class="footer__icon">
+              <use href="./images/symbol-defs.svg#icon-facebook"></use>
+            </svg>
+          </div>
+          <div class="footer__back">
+            <svg class="footer__icon">
+              <use href="./images/symbol-defs.svg#icon-in"></use>
+            </svg>
           </div>
         </div>
-      
+      </div>
     </footer>
   </body>
 </html>
