@@ -50,7 +50,7 @@
         <p class="webstudio__section1__text">
           ЕФЕКТИВНІ РІШЕННЯ ДЛЯ<br />ВАШОГО БІЗНЕСУ
         </p>
-        <button class="webstudio__section1__button">Замовити послугу</button>
+        <button class="webstudio__section1__button"   data-modal-open>Замовити послугу</button>
       </section>
 
       <section class="webstudio__section2">
@@ -64,7 +64,7 @@
         </div>
 
         <div class="webstudio__section2__div2">
-          <img  alt="img" src="images/about2.png" />
+          <img alt="img" src="images/about2.png" />
           <p class="webstudio__section2__text1">ПУНКТУАЛЬНІСТЬ</p>
           <p class="webstudio__section2__text2">
             Завдання організації, особливо рамки і місце навчання кадрів тягне у
@@ -73,7 +73,7 @@
         </div>
 
         <div class="webstudio__section2__div3">
-          <img  alt="img" src="images/about3.png" />
+          <img alt="img" src="images/about3.png" />
           <p class="webstudio__section2__text1">ПЛАНУВАННЯ</p>
           <p class="webstudio__section2__text2">
             Так само консультація з широким активом значною мірою зумовлює.
@@ -81,7 +81,7 @@
         </div>
 
         <div class="webstudio__section2__div4">
-          <img  alt="img" src="images/about4.png" />
+          <img alt="img" src="images/about4.png" />
           <p class="webstudio__section2__text1">СУЧАСНІ ТЕХНОЛОГІЇ</p>
           <p class="webstudio__section2__text2">
             Значимість цих проблем настільки очевидна, що реалізація планових
@@ -94,15 +94,15 @@
         <h1 class="webstudio__section3__h1">Чим ми займаємося</h1>
         <div class="webstudio__section3__div">
           <div class="box">
-            <img  alt="img" class="imggav" src="images/img1.jpg" />
+            <img alt="img" class="imggav" src="images/img1.jpg" />
             <p class="position text1">ДЕКСТОПНІ ДОДАТКИ</p>
           </div>
           <div class="box">
-            <img  alt="img" class="imggav" src="images/img2.jpg" />
+            <img alt="img" class="imggav" src="images/img2.jpg" />
             <p class="position text2">МОБІЛЬНІ ДОДАТКИ</p>
           </div>
           <div class="box">
-            <img  alt="img" class="imggav" src="images/img3.jpg" />
+            <img alt="img" class="imggav" src="images/img3.jpg" />
             <p class="position text3">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
           </div>
         </div>
@@ -112,7 +112,7 @@
         <h1 class="webstudio__section4__h1">Наша команда</h1>
         <div class="webstudio__section4__div">
           <div class="webstudio__section4__div1">
-            <img  alt="img" class="img" src="images/img4.jpg" />
+            <img alt="img" class="img" src="images/img4.jpg" />
             <p class="webstudio__section4__text1">Ігор Дем'яненко</p>
             <p class="webstudio__section4__text2">Product Designer</p>
             <div class="icons">
@@ -139,7 +139,7 @@
             </div>
           </div>
           <div class="webstudio__section4__div1">
-            <img  alt="img" class="img" src="images/img5.jpg" />
+            <img alt="img" class="img" src="images/img5.jpg" />
             <p class="webstudio__section4__text1">Ольга Рєпіна</p>
             <p class="webstudio__section4__text2">Frontend Developer</p>
             <div class="icons">
@@ -166,7 +166,7 @@
             </div>
           </div>
           <div class="webstudio__section4__div1">
-            <img  alt="img" class="img" src="images/img6.jpg" />
+            <img alt="img" class="img" src="images/img6.jpg" />
             <p class="webstudio__section4__text1">Микола Тарасов</p>
             <p class="webstudio__section4__text2">Marketing</p>
             <div class="icons">
@@ -193,7 +193,7 @@
             </div>
           </div>
           <div class="webstudio__section4__div1">
-            <img  alt="img" class="img" src="images/img7.jpg" />
+            <img alt="img" class="img" src="images/img7.jpg" />
             <p class="webstudio__section4__text1">Михайло Єрмаков</p>
             <p class="webstudio__section4__text2">UI Designer</p>
             <div class="icons">
@@ -261,7 +261,7 @@
 
     <footer class="footer">
       <div class="footer1">
-        <img  alt="logo" src="images/WebStudio2.svg" />
+        <img alt="logo" src="images/WebStudio2.svg" />
         <address class="footer__address">
           м. Київ, пр-т Лесі Українки, 26
         </address>
@@ -301,6 +301,74 @@
           </div>
         </div>
       </div>
+
+      <div class="footer3">
+        <p class="footer2__text">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
+      <form class="footer3__form">
+        <input required type="email" class="footer3__input" placeholder="E-mail">
+      <button data-model-open type="button" class="footer3__button"  >
+        Підписатися
+        <img src="./images/icon-send.svg" alt="svg" class="footer3__button__img">
+      </button>
+      </form>
+      </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <svg class="modal__label__input__svg gav1">
+          <use href="./images/symbol-defs1.svg#icon-modal__person"></use>
+        </svg>
+        <svg class="modal__label__input__svg gav2">
+          <use href="./images/symbol-defs1.svg#icon-modal__phone"></use>
+        </svg>
+        <svg class="modal__label__input__svg gav3">
+          <use href="./images/symbol-defs1.svg#icon-modal__email"></use>
+        </svg>
+
+        <button class="button__close" data-modal-close>
+          <svg class="modal__cross">
+            <use href="./images/symbol-defs1.svg#icon-modal__cross"></use>
+          </svg>
+        </button>
+
+        <h5 class="modal__h5">Залиште свої дані, ми вам передзвонимо</h5>
+        <form class="modal__form">
+          <label class="modal__label">
+            <p class="modal__label__text">Ім'я</p>
+            <input type="name" class="modal__label__input" required />
+          </label>
+          <label class="modal__label">
+            <p class="modal__label__text">Телефон</p>
+            <input type="tel" class="modal__label__input" required />
+          </label>
+          <label class="modal__label">
+            <p class="modal__label__text">Пошта</p>
+            <input type="email" class="modal__label__input"  required/>
+          </label>
+          <label class="modal__label__textarea">
+            <p class="modal__label__text">Коментар</p>
+            <textarea
+              class="modal__label__textarea__textarea"
+              placeholder="Введіть текст"
+              required
+            ></textarea>
+          </label>
+          <div class="label__div">
+            <input type="checkbox" class="radio" />
+          <label class="label">   
+              Погоджуюся з розсилкою та приймаю
+              <a href="#" class="label__link">Умови договору</a>
+            
+          </label>
+          </div>
+        
+
+          <button type="submit" class="button__form">Відправити</button>
+        </form>
+      </div>
+    </div>
+    <script href="script.js"></script>
+
   </body>
 </html>
