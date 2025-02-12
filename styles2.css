@@ -46,15 +46,19 @@
 .header__nav__item__link2 {
   color: var(--studio);
   font-family: "Roboto", serif;
+  transition: transform 2s linear;
 }
 
-.header__nav__item__link2::after {
+.header__nav__item__link2:hover::after {
   display: block;
   width: 72px;
   height: 4px;
   border-radius: 2px;
   background-color: var(--studio);
   content: "";
+  position: absolute;
+  top: 90px;
+  transform: translateX(0);
 }
 
 .header__nav__item__link2:hover {
@@ -90,7 +94,7 @@
   height: 12px;
 }
 
-.icon-post:hover {
+.icon-post__div:hover .icon-post {
   cursor: pointer;
   fill: var(--studio);
 }
@@ -99,7 +103,7 @@
   color: var(--tel);
 }
 
-.header__div2__link1:hover {
+.icon-post__div:hover .header__div2__link1 {
   cursor: pointer;
   color: var(--studio);
 }
@@ -116,7 +120,7 @@
   height: 16px;
 }
 
-.icon-smartphone:hover {
+.icon-smartphone__div:hover .icon-smartphone {
   cursor: pointer;
   fill: var(--studio);
 }
@@ -125,7 +129,7 @@
   color: var(--tel);
 }
 
-.header__div2__link2:hover {
+.icon-smartphone__div:hover .header__div2__link2 {
   cursor: pointer;
   color: var(--studio);
 }
@@ -158,11 +162,14 @@
   box-shadow: 0px 2px 2px 0px #a5a2a21f;
   box-shadow: 0px 1px 2px 0px #a5a2a21f;
   box-shadow: 0px 3px 1px 0px #a5a2a21f;
+  transition: transform, background-color 0.5s,
+    0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio__button1:hover {
   cursor: pointer;
   background-color: rgb(31, 33, 173);
+  transform: scale(0.95);
 }
 
 .portfolio__button {
@@ -177,11 +184,14 @@
   font-weight: 500;
   line-height: 26px;
   letter-spacing: 0.03em;
+  transition: transform, background-color 0.5s,
+    0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio__button:hover {
   cursor: pointer;
   background-color: rgb(141, 138, 138);
+  transform: scale(0.95);
 }
 
 .portfolio__section2 {
@@ -311,11 +321,14 @@
   background-color: #ffffff1a;
   border-radius: 100px;
   padding: 10px;
+  transition: background-color, transform 0.5s,
+    0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__back:hover {
   background-color: var(--studio);
   cursor: pointer;
+  transform: scale(0.9);
 }
 
 .footer__icons {
@@ -348,10 +361,13 @@
   border-radius: 4px;
   background-color: var(--studio);
   border: 2px solid var(--studio);
+  transition: transform, background-color 0.5s,
+    0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer3__button:hover {
   background-color: rgb(31, 33, 173);
   cursor: pointer;
   border: 2px solid rgb(31, 33, 173);
+  transform: scale(0.9);
 }

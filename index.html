@@ -50,7 +50,9 @@
         <p class="webstudio__section1__text">
           ЕФЕКТИВНІ РІШЕННЯ ДЛЯ<br />ВАШОГО БІЗНЕСУ
         </p>
-        <button class="webstudio__section1__button"   data-modal-open>Замовити послугу</button>
+        <button data-modal-open class="webstudio__section1__button" data-modal-open>
+          Замовити послугу
+        </button>
       </section>
 
       <section class="webstudio__section2">
@@ -260,6 +262,7 @@
     </main>
 
     <footer class="footer">
+
       <div class="footer1">
         <img alt="logo" src="images/WebStudio2.svg" />
         <address class="footer__address">
@@ -304,14 +307,25 @@
 
       <div class="footer3">
         <p class="footer2__text">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
-      <form class="footer3__form">
-        <input required type="email" class="footer3__input" placeholder="E-mail">
-      <button data-model-open type="button" class="footer3__button"  >
-        Підписатися
-        <img src="./images/icon-send.svg" alt="svg" class="footer3__button__img">
-      </button>
-      </form>
+        <form class="footer3__form">
+          <input
+            required
+            type="email"
+            class="footer3__input"
+            placeholder="E-mail"
+          />
+          <button  type="submit" class="footer3__button">
+            Підписатися
+            <img
+              src="./images/icon-send.svg"
+              alt="svg"
+              class="footer3__button__img"
+            />
+          </button>
+        </form>
       </div>
+    
+  
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
@@ -344,7 +358,7 @@
           </label>
           <label class="modal__label">
             <p class="modal__label__text">Пошта</p>
-            <input type="email" class="modal__label__input"  required/>
+            <input type="email" class="modal__label__input" required />
           </label>
           <label class="modal__label__textarea">
             <p class="modal__label__text">Коментар</p>
@@ -356,19 +370,16 @@
           </label>
           <div class="label__div">
             <input type="checkbox" class="radio" />
-          <label class="label">   
+            <label class="label">
               Погоджуюся з розсилкою та приймаю
               <a href="#" class="label__link">Умови договору</a>
-            
-          </label>
+            </label>
           </div>
-        
 
           <button type="submit" class="button__form">Відправити</button>
         </form>
       </div>
     </div>
-    <script href="script.js"></script>
-
+    <script src="script.js"></script>
   </body>
 </html>

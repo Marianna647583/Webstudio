@@ -38,15 +38,19 @@ body {
 .header__nav__item__link1 {
   color: var(--studio);
   font-family: "Roboto", serif;
+  transition: transform 2s linear;
 }
 
-.header__nav__item__link1::after {
-  display:block;
+.header__nav__item__link1:hover:after {
+  display: block;
   width: 48px;
   height: 4px;
   border-radius: 2px;
   background-color: var(--studio);
   content: "";
+  position: absolute;
+  top: 90px;
+  transform: translateX(0);
 }
 
 .header__nav__item__link1:hover {
@@ -86,24 +90,24 @@ body {
   gap: 10px;
 }
 
-.icon-post {
-  fill: var(--tel);
-  width: 16px;
-  height: 12px;
-}
-
-.icon-post:hover {
-  cursor: pointer;
-  fill: var(--studio);
-}
-
 .header__div2__link1 {
   color: var(--tel);
 }
 
-.header__div2__link1:hover {
+.icon-post__div:hover .header__div2__link1 {
   cursor: pointer;
   color: var(--studio);
+}
+
+.icon-post__div:hover .icon-post {
+  cursor: pointer;
+  fill: var(--studio);
+}
+
+.icon-post {
+  fill: var(--tel);
+  width: 16px;
+  height: 12px;
 }
 
 .icon-smartphone__div {
@@ -112,24 +116,24 @@ body {
   align-items: baseline;
 }
 
+.icon-smartphone__div:hover .icon-smartphone {
+  fill: var(--studio);
+  cursor: pointer;
+}
+
 .icon-smartphone {
   fill: var(--tel);
   width: 10px;
   height: 16px;
 }
 
-.icon-smartphone:hover {
+.icon-smartphone__div:hover .header__div2__link2 {
+  color: var(--studio);
   cursor: pointer;
-  fill: var(--studio);
 }
 
 .header__div2__link2 {
   color: var(--tel);
-}
-
-.header__div2__link2:hover {
-  cursor: pointer;
-  color: var(--studio);
 }
 
 .webstudio__section1 {
@@ -165,11 +169,14 @@ body {
   letter-spacing: 0.06em;
   text-align: center;
   box-shadow: 4px 3px 34px 0px rgba(0, 0, 0, 0.75);
+  transition: transform, background-color 0.5s,
+    0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .webstudio__section1__button:hover {
   cursor: pointer;
   background-color: rgb(31, 33, 173);
+  transform: translate(1s);
 }
 
 .webstudio__section2 {
@@ -314,10 +321,15 @@ body {
   fill: var(--tel);
 }
 
+.back {
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .back:hover {
   cursor: pointer;
   border-radius: 100px;
   background-color: var(--studio);
+  transform: translate(1s);
 }
 
 .icon {
@@ -358,12 +370,14 @@ body {
   border: 1px solid var(--company);
   border-radius: 4px;
   padding: 32px;
+  transition: transform, border 0.5s, 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-company:hover {
   cursor: pointer;
   fill: var(--studio);
   border-color: var(--studio);
+  transform: translate(0.5s);
 }
 
 .footer {
@@ -428,11 +442,14 @@ body {
   background-color: #ffffff1a;
   border-radius: 100px;
   padding: 10px;
+  transition: background-color, transform 0.5s,
+    0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__back:hover {
   background-color: var(--studio);
   cursor: pointer;
+  transform: translate(0.5s);
 }
 
 .footer__icons {
@@ -465,15 +482,18 @@ body {
   border-radius: 4px;
   background-color: var(--studio);
   border: 2px solid var(--studio);
+  transition: transform, background-color 0.5s,
+    0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer3__button:hover {
   background-color: rgb(31, 33, 173);
   cursor: pointer;
   border: 2px solid rgb(31, 33, 173);
+  transform: scale(0.9);
 }
 
-/* .backdrop {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -484,7 +504,7 @@ body {
 }
 
 .backdrop.is-hidden {
-   opacity: 0;
+  opacity: 0;
   pointer-events: none;
 }
 
@@ -497,7 +517,7 @@ body {
   border-radius: 4px;
   background-color: var(--white);
   transform: translate(-50%, -50%);
-}  */
+}
 
 .gav1 {
   position: absolute;
@@ -571,7 +591,7 @@ body {
   border: 1px solid #21212133;
 }
 
-.modal__label__input:focus-within {
+.modal__label__input:focus {
   outline: 1px solid var(--studio);
 }
 
@@ -590,7 +610,7 @@ body {
   margin: 0;
 }
 
-.modal__label__textarea__textarea:focus-within {
+.modal__label__textarea__textarea:focus {
   outline: 1px solid var(--studio);
 }
 
