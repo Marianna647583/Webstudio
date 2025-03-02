@@ -50,10 +50,10 @@ body {
 .header__nav__item__link2 {
   color: var(--studio);
   font-family: "Roboto", serif;
-  transition: transform 2s linear;
+position: relative;
 }
 
-.header__nav__item__link2:hover::after {
+.header__nav__item__link2::after {
   display: block;
   width: 72px;
   height: 4px;
@@ -61,8 +61,20 @@ body {
   background-color: var(--studio);
   content: "";
   position: absolute;
-  top: 90px;
-  transform: translateX(0);
+  top: 30px;
+  animation: nav 0.4s linear;
+}
+
+@keyframes nav {
+  from {
+    transform: translateX(-70px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .header__nav__item__link2:hover {

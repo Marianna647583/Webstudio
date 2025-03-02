@@ -38,20 +38,33 @@ body {
 .header__nav__item__link1 {
   color: var(--studio);
   font-family: "Roboto", serif;
-  transition: transform 2s linear;
+  position: relative;
 }
 
-.header__nav__item__link1:hover:after {
+.header__nav__item__link1::after {
   display: block;
-  width: 48px;
+  width: 50px;
   height: 4px;
   border-radius: 2px;
   background-color: var(--studio);
   content: "";
   position: absolute;
-  top: 90px;
-  transform: translateX(0);
+  top: 30px;
+  animation: nav 0.4s linear;
 }
+
+@keyframes nav {
+  from {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 
 .header__nav__item__link1:hover {
   cursor: pointer;
